@@ -33,6 +33,20 @@ https://en.wikipedia.org/wiki/Polarization_(waves) 20.4. ob 14:40
 [12]
 https://sl.wikipedia.org/wiki/Polarizator 20.4. 16:04
 
+[13]
+https://en.wikipedia.org/wiki/Polarizer 20.4. 22:20
+
+[14]
+https://www.quintessencelabs.com/wp-content/uploads/2016/09/CSA_What-is-Quantum-Key-Distribution-QKD_QSS.pdf 21.4. 19:34
+
+[15]
+https://sl.wikipedia.org/wiki/%C5%A0ifriranje_sporo%C4%8Dil 21.4. 21:16
+
+[16]
+https://en.wikipedia.org/wiki/Encryption 21.4. 21:18
+
+[17]
+clanek
 
 
 
@@ -46,4 +60,6 @@ https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD29MLPgUlAw-KzrsbiGl5wj9Z
 
 https://www.google.com/search?q=linear+polarization&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiFwfCX8sjaAhUFKVAKHWUFCLsQ_AUICigB&biw=673&bih=617#imgrc=piEZDeIwWjMGLM: 20.4. 14:53
 
-https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Wire-grid-polarizer.svg/1200px-Wire-grid-polarizer.svg.png 20.4. 16:02
+http://www.apioptics.com/images/linear-figure-1.png 21.4. 19:01
+
+https://www.google.com/search?q=polarizer&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj_6KXi68vaAhUDaFAKHRmvD3YQ_AUICigB&biw=1366&bih=637#imgrc=ywNiKO8KIGpnSM: 21.4. 19:10

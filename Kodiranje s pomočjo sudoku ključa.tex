@@ -9,6 +9,7 @@
 \date{26.04.2018}
 
 \newtheorem{definicija}{Definicija}
+\newtheorem{zgled}{Zgled}
 
 
 \begin{document}
@@ -20,7 +21,7 @@
 
 \section{Uvod}
 
-V današnjem svetu, kjer se vsak dan preko različnih komunikacijskih kanalov pretoči nepredstavljiva količina informacij, se pojavi vprašanje varovanja osebnih podatkov. Tema je še posebej aktualna na področju spletnih bančnih storitev in drugih podobno zaupnih dejavnostih. Pomagamo si s šifriranjem podatkov, navadno s pomočjo neke metode ali ključa, ki ga pozna le prejemnik in ga nato uporabi za dešifriranje prejetega sporočila. Pri šifriranju s ključem naletimo na problem, kako ključ za dešifriranje na varen način in v realnem času sporočiti našemu sogovorniku. Če namreč prisluškovalec prestreže naš ključ in za tem še sporočilo, bo brez težav dešifriral podatke. [2]
+V današnjem svetu, kjer se vsak dan preko različnih komunikacijskih kanalov pretoči nepredstavljiva količina informacij, se pojavi vprašanje varovanja osebnih podatkov. Tema je še posebej aktualna na področju spletnih bančnih storitev in drugih podobno zaupnih dejavnostih. Pomagamo si s šifriranjem podatkov, navadno s pomočjo neke metode ali ključa, ki ga poznata le pošiljatelj in prejemnik in ga uporabita za šifriranje sporočila. Pri šifriranju s ključem naletimo na problem, kako ključ za dešifriranje na varen način in v realnem času sporočiti našemu sogovorniku. Če namreč prisluškovalec prestreže naš ključ in za tem še sporočilo, bo brez težav dešifriral podatke. [2]
 
 Kvantno šifriranje oziroma kvantna kriptografija temelji na posebnih fizikalnih lastnosti delcev. Te lastnostii omogočajo varen prenos šifrirnega ključa tudi preko javnega, nezaščitenega komunikacijskega kanala. Še več, s pomočjo te metode lahko celo ugotovimo, ali je bila med pošiljateljem in prejemnikom prisotna tretja oseba, torej prisluškovalec in po potrebi pripravimo nov ključ za šifriranje. [2]
 
@@ -53,7 +54,11 @@ Torej si lahko širjenje svetlobe oziroma elektromagnetnega valovanje predstavlj
 Polarizacija valovanja opisuje smer nihanja količine, ki valuje. [10],[11]
 \end{definicija}
 
-%vstavi sliko za lazje razumevanje
+\begin{figure}[h]
+\centering
+\caption{Primer polarizacije}
+\includegraphics[scale=0.75]{images}
+\end{figure}
 
 S polarizacijo opisujemo le transverzalno valovanje, saj pri longitudialnem smer nihanja količine sovpada s smerjo valovanja. Poznamo tri osnovne tipe polarizacije: linearno, krožno in eliptično. [10],[11]
 
@@ -71,11 +76,50 @@ Val je linarno polariziran, če nihanje poteka le v eni smeri. Krožno in elipti
 
 Elektromagnetno valovanje oziroma svetloba je transverzalno valovanje. Sestavljeno iz nihanja električnega in magnetnega polja, ki nihata pravokotno na smer valovanja ter pravokotno en na drugega. Po dogovoru je smer polarizacije enaka smeri nihanja jakosti električnega polja. [10],[11]
 
-V nadaljevanju bomo potrebovali linearno polarizacijo fotonov, zato si poglejmo kako jo lahko umetno ustvarimo. Naj še enkrat opomnimo, da je polarizacija fotonov sovpada s polarizacijo elektromagnetnega valovanja. 
+V nadaljevanju bomo potrebovali linearno polarizacijo fotonov, zato si poglejmo kako jo lahko umetno ustvarimo. Naj še enkrat opomnimo, da polarizacija fotonov sovpada s polarizacijo elektromagnetnega valovanja. 
 
 \begin{definicija}
 Polarizator je naprava, ki valovanje z nedoločeno ali mešano polarizacijo spremeni v valovanje z določeno polarizacijo.
 \end{definicija}
+
+\begin{figure}[h]
+\centering
+\caption{Delovanje polarizatorja}
+\includegraphics[scale=0.75]{linear-figure-1}
+\end{figure}
+
+
+%KVANTNA RAZDELITEV KLJUČA
+
+\section{Kvantna razdelitev ključa}
+
+\begin{definicija}
+Šifriranje podatkov je pretvorba podatkov v tako obliko, da je nepooblaščene osebe ne razumejo. [15]
+\end{definicija}
+
+Navadno šifriramo podatke z uporabo algoritmov ter drugih matematičnih postopkov. Čeprav je lahko tak postopek zelo učinkovit in ga morebitni vsiljivci težko dešifrirajo, pa je skoraj nemogoče preveriti prisotnost prisluškovalca. Prav to je izjemna lastnost kvantnega šifriranja podatkov, sogovornika namreč ob koncu pogovora vesta, ali je njuno sporočila prejela še tretja oseba. [16]
+
+Za lažjo razlago postopka poimenujmo našega pošiljatelja sporočila Alica, prejemnika Bob in prisluškovatelja Eva.
+
+Kako torej poteka kvantno šifriranje?
+Spoznali smo že fotone in njihovo polarizacijo in izvedeli, kako lahko polarizacijo spreminjamo. Torej lahko z različnimi polarizacijami fotonov predstavimo različne vrednosti. [17]
+
+\begin{zgled}
+Naj naprimer linearna polarizacija v smeri y osi ($\uparrow$) v binarnem zapisu pomeni 0, polarizacija v smeri x osi ($\rightarrow$) pa 1. Tako lahko Alica z zaporedjem fotonov, ki jim priredi polarizacijo pošlje Bobu število v binarnem zapisu. [17]
+\end{zgled}
+
+Lahko bi definirali še število 2 s polarizacijo v smeri premice pri kotu $45^{\circ}$ ($\nearrow$), ter število 3 pri kotu $135^{\circ}$ ($\nwarrow$) itd., potrebujemo le ustrezni polarizator. Bolj enostavno je, če se omejimo na manjše število polarizacij in uporabimo kvantno šifriranje izključno za pošiljanje ključa, s katerim nato šifriramo nadaljna sporočila. [17]
+
+Bob mora pri prejemu posameznega fotona uporabiti enak polarizator kot ga je Alica pri določanju polarizacije, sicer odčitana vrednost ni nujno pravilna. Navadno za polarizaciji $\uparrow$ in $\rightarrow$ uporabimo polarizator oblike +, za $\nearrow$ in $\nwarrow$ polarizaciji pa polarizator $\times$. Kaj bi se zgodilo, če bi Bob uporabil napačni polarizator pri prejemu fotona? 
+
+\begin{zgled}
+Recimo da Alica želi poslati vrednost 1, torej pošlje foton s polarizacijo $\uparrow$. Če Bob namesto polarizatorja +, ki bi pravilno odčital polarizacijo fotona in s tem vrednost uporabi polarizator $\times$, bo naključno prejel eno od $\nearrow$, $\nwarrow$ polarizacij. Torej bo namesto vrednosti 1, prejel število 2 ali 3.
+\end{zgled}
+
+Zakaj nam torej tak prenos podatkov omogoča zaznavo prisluškovalca?
+Če Eva želi dobiti sporočilo, ki ga Alica pošilja Bobu, mora prestreči poslane fotone, pri tem pa uporabiti enega od polarizatorjev. Eva ne ve katero polarizacijo je Alica izbrala za posamezen foton in lahko le naključno izbere polarizator, s katerim bo prebrala foton in ga nato poslala naprej Bobu. Ima torej 50\% možnosti, da se pri izbiri zmoti, s tem pokvari prvotno polarizacijo in zato Bobu posreduje napačno polariziran foton. Poslano sporočilo se seveda ne bo ujemalo s prejetim in Alica in Bob bosta vedela, da je bila prisotna tudi Eva. 
+
+Pojavi se vprašanje kako naj bi Bob vedel, kateri polarizator mora uporabiti. Alica mu zaradi morebitne prisotnosti Eve seveda ne sme povedati katero polarizacijo je uporabila na fotonih. Odgovor je preprost: tudi Bob ne ve, kateri polarizator mora uporabiti, zato ga kar naključno izbere. Skoraj zagotovo torej Alica in Bob po koncu pošiljanja fotonov tudi brez Eve nimata enakega ključa. Vendar obstaja način, da ga dobita. Pravimo mu BB84 protokol.
 
 
 %BB84 PROTOKOL
@@ -83,9 +127,8 @@ Polarizator je naprava, ki valovanje z nedoločeno ali mešano polarizacijo spre
 \section{BB84 protokol}
 
 
-%KVANTNA RAZDELITEV KLJUČA
-
-\section{Kvantna razdelitev ključa}
+%ZGLED
+\section{Prikaz delovanja na zgledu}
 
 
 %SUDOKU
