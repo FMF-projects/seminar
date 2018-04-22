@@ -31,7 +31,7 @@
 
 V današnjem svetu, kjer se vsak dan preko različnih komunikacijskih kanalov pretoči nepredstavljiva količina informacij, se pojavi vprašanje varovanja osebnih podatkov. Tema je še posebej aktualna na področju spletnih bančnih storitev in drugih podobno zaupnih dejavnostih. Pomagamo si s šifriranjem podatkov, navadno s pomočjo neke metode ali ključa, ki ga poznata le pošiljatelj in prejemnik in ga uporabita za šifriranje sporočila. Pri šifriranju s ključem naletimo na problem, kako ključ za dešifriranje na varen način in v realnem času sporočiti našemu sogovorniku. Če namreč prisluškovalec prestreže naš ključ in za tem še sporočilo, bo brez težav dešifriral podatke. [2]
 
-Kvantno šifriranje oziroma kvantna kriptografija temelji na posebnih fizikalnih lastnosti delcev. Te lastnostii omogočajo varen prenos šifrirnega ključa tudi preko javnega, nezaščitenega komunikacijskega kanala. Še več, s pomočjo te metode lahko celo ugotovimo, ali je bila med pošiljateljem in prejemnikom prisotna tretja oseba, torej prisluškovalec in po potrebi pripravimo nov ključ za šifriranje. [2]
+Kvantno šifriranje oziroma kvantna kriptografija temelji na posebnih fizikalnih lastnosti delcev. Te lastnosti omogočajo varen prenos šifrirnega ključa tudi preko javnega, nezaščitenega komunikacijskega kanala. Še več, s pomočjo te metode lahko celo ugotovimo, ali je bila med pošiljateljem in prejemnikom prisotna tretja oseba, torej prisluškovalec in po potrebi pripravimo nov ključ za šifriranje. [2]
 
 
 %POLARIZACIJA FOTONOV
@@ -93,7 +93,7 @@ Polarizator je naprava, ki valovanje z nedoločeno ali mešano polarizacijo spre
 \begin{figure}[h]
 \centering
 \caption{Delovanje polarizatorja}
-\includegraphics[scale=0.75]{linear-figure-1}
+\includegraphics[scale=0.7]{linear-figure-1}
 \end{figure}
 
 
@@ -177,6 +177,8 @@ ujemanje ključev & \cmark & - & \xmark & - & - & \cmark & - & \cmark\\
 \end{tabular}
 \end{center}
 
+Opazimo, da je pri tretjem fotonu prišlo do razlikovanja v vrednosti kljub temu, da sta Alica in Bob uporabila enaki bazi polarizacije. To jima pove, da je bila Eva prisotna pri pošiljanju ključa.
+
 \end{zgled}
 
 
@@ -214,4 +216,77 @@ Skozi leta so se razvile različne oblike sudokuja in prispevale k težavnosti r
 
 \section{Sudoku ključ}
 
+Na primeru si oglejmo kako poteka kvantno razdeljevanje ključa s pomočjo sudoku mreže. [1]
+
+Alica se odloči, da bo ključ za šifriranje poslala Bobu s pomočjo fotonov tako, da bo zaporedje polarizacij predstavljalo rešitev 4x4 sudoku mreže. Poslala bo sledeč sudoku:
+
+\begin{center}
+\begin{tabular}{| c | c || c | c |}
+\hline
+0 & 1 & 2 & 3\\
+\hline
+3 & 2 & 1 & 0\\
+\hline
+\hline
+2 & 0 & 3 & 1\\
+\hline
+1 & 3 & 0 & 2\\
+\hline
+\end{tabular}
+\end{center}
+
+Pri tem pa uporabila polarizacije:
+
+\begin{center}
+\begin{tabular}{l c c c c}
+vrednost & 0 & 1 & 2 & 3\\
+polarizacija & $\rightarrow$ & $\uparrow$ & $\nwarrow$ & $\nearrow$\\
+baza polarizacije & + & + & $\times$ & $\times$\\
+\end{tabular}
+\end{center}
+
+Če sudoku mrežo pretvorimo v zaporedje fotonov z ustrezno polarizacijo dobimo:
+
+\begin{center}
+\begin{tabular}{l m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm}}
+vrednost & 0 & 1 & 2 & 3 & 3 & 2 & 1 & 0 & 2 & 0 & 3 & 1 & 1 & 3 & 0 & 2\\
+baza & + & + & $\times$ & $\times$ & $\times$ & $\times$ & + & + & $\times$ & + & $\times$ & + & + & $\times$ & + & $\times$\\
+polarizacija & $\rightarrow$ & $\uparrow$ & $\nwarrow$ & $\nearrow$ & $\nearrow$ & $\nwarrow$ & $\uparrow$ & $\rightarrow$ & $\nwarrow$ & $\rightarrow$ & $\nearrow$ & $\uparrow$ & $\uparrow$ & $\nearrow$ & $\rightarrow$ & $\nwarrow$.
+\end{tabular}
+\end{center}
+
+Po prej opisanem postopku, Alica Bobu pošlje fotone, on pa jih prestreže in na vsakem uporabi naključno izbrano bazo polarizacije, torej + ali $\times$. 
+
+\begin{center}
+\begin{tabular}{l m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm}}
+vrednost & 0 & 1 & 2 & 3 & 3 & 2 & 1 & 0 & 2 & 0 & 3 & 1 & 1 & 3 & 0 & 2\\
+baza & + & + & $\times$ & $\times$ & $\times$ & $\times$ & + & + & $\times$ & + & $\times$ & + & + & $\times$ & + & $\times$\\
+polarizacija & $\rightarrow$ & $\uparrow$ & $\nwarrow$ & $\nearrow$ & $\nearrow$ & $\nwarrow$ & $\uparrow$ & $\rightarrow$ & $\nwarrow$ & $\rightarrow$ & $\nearrow$ & $\uparrow$ & $\uparrow$ & $\nearrow$ & $\rightarrow$ & $\nwarrow$\\
+\\
+Bobova baza & + & $\times$ & + & + & $\times$ & $\times$ & + & $\times$ & + & + & $\times$ & + & $\times$ & $\times$ & + & +\\
+prejeta vrednost & 0 & - & - & - & 3 & 2 & 1 & - & - & - & 3 & 1 & - & 3 & - & 2\\ 
+\end{tabular}
+\end{center}
+
+Bob lahko vrednosti, pri katerih sta se njegova in Alicina baza polarizacije ujemali vnese v 4x4 mrežo in na ta način dobi nerešen sudoku.
+
+\begin{center}
+\begin{tabular}{| c | c || c | c |}
+\hline
+0 & & & \\
+\hline
+3 & 2 & 1 & \\
+\hline
+\hline
+& & 3 & 1\\
+\hline
+& 3 & & 2\\
+\hline
+\end{tabular}
+\end{center}
+
+Sudoku reši po pravilih reševanja in dobi celoten ključ za šifriranje.
+
 \end{document}
+
+
