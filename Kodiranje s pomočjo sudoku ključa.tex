@@ -99,36 +99,27 @@ Polarizator je naprava, ki valovanje z nedoločeno ali mešano polarizacijo spre
 
 Navadno šifriramo podatke z uporabo algoritmov ter drugih matematičnih postopkov. Čeprav je lahko tak postopek zelo učinkovit in ga morebitni vsiljivci težko dešifrirajo, pa je skoraj nemogoče preveriti prisotnost prisluškovalca. Prav to je izjemna lastnost kvantnega šifriranja podatkov, sogovornika namreč ob koncu pogovora vesta, ali je njuno sporočila prejela še tretja oseba. [16]
 
-Za lažjo razlago postopka poimenujmo našega pošiljatelja sporočila Alica, prejemnika Bob in prisluškovatelja Eva.
+Za lažjo razlago postopka poimenujmo našega pošiljatelja sporočila Alica, prejemnika Bob in prisluškovalca Eva.
 
 Kako torej poteka kvantno šifriranje?
 Spoznali smo že fotone in njihovo polarizacijo in izvedeli, kako lahko polarizacijo spreminjamo. Torej lahko z različnimi polarizacijami fotonov predstavimo različne vrednosti. [17]
 
 \begin{zgled}
-Naj naprimer linearna polarizacija v smeri y osi ($\uparrow$) v binarnem zapisu pomeni 0, polarizacija v smeri x osi ($\rightarrow$) pa 1. Tako lahko Alica z zaporedjem fotonov, ki jim priredi polarizacijo pošlje Bobu število v binarnem zapisu. [17]
+Naj naprimer linearna polarizacija v smeri y osi ($\uparrow$) v binarnem zapisu pomeni 1, polarizacija v smeri x osi ($\rightarrow$) pa 0. Tako lahko Alica z zaporedjem fotonov, ki jim priredi polarizacijo pošlje Bobu število v binarnem zapisu. [17]
 \end{zgled}
 
 Lahko bi definirali še število 2 s polarizacijo v smeri premice pri kotu $45^{\circ}$ ($\nearrow$), ter število 3 pri kotu $135^{\circ}$ ($\nwarrow$) itd., potrebujemo le ustrezni polarizator. Bolj enostavno je, če se omejimo na manjše število polarizacij in uporabimo kvantno šifriranje izključno za pošiljanje ključa, s katerim nato šifriramo nadaljna sporočila. [17]
 
-Bob mora pri prejemu posameznega fotona uporabiti enak polarizator kot ga je Alica pri določanju polarizacije, sicer odčitana vrednost ni nujno pravilna. Navadno za polarizaciji $\uparrow$ in $\rightarrow$ uporabimo polarizator oblike +, za $\nearrow$ in $\nwarrow$ polarizaciji pa polarizator $\times$. Kaj bi se zgodilo, če bi Bob uporabil napačni polarizator pri prejemu fotona? 
+Bob mora pri prejemu posameznega fotona uporabiti ustrezen polarizator, sicer odčitana vrednost ni nujno pravilna. Če je Alica foton polarizirala z $\uparrow$ ali $\rightarrow$ mora za pravilno interpretacijo Bob uporabiti polarizator oblike +, za $\nearrow$ in $\nwarrow$ polarizaciji pa polarizator $\times$. Kaj bi se zgodilo, če bi Bob pri prejemu fotona uporabil napačen polarizator? 
 
 \begin{zgled}
-Recimo da Alica želi poslati vrednost 1, torej pošlje foton s polarizacijo $\uparrow$. Če Bob namesto polarizatorja +, ki bi pravilno odčital polarizacijo fotona in s tem vrednost uporabi polarizator $\times$, bo naključno prejel eno od $\nearrow$, $\nwarrow$ polarizacij. Torej bo namesto vrednosti 1, prejel število 2 ali 3.
+Recimo da Alica želi poslati vrednost 1, torej pošlje foton s polarizacijo $\uparrow$. Če Bob namesto polarizatorja +, ki bi pravilno odčital polarizacijo fotona uporabi polarizator $\times$, bo naključno prejel eno od $\nearrow$, $\nwarrow$ polarizacij. Torej bo namesto vrednosti 1, prejel število 2 ali 3.
 \end{zgled}
 
+Pojavi se vprašanje kako naj bi Bob vedel, kateri polarizator mora uporabiti. Alica mu zaradi morebitne prisotnosti Eve seveda ne sme povedati katero polarizacijo je uporabila na fotonih. Odgovor je preprost: tudi Bob ne ve, kateri polarizator mora uporabiti, zato ga kar naključno izbere. Skoraj zagotovo torej Alica in Bob po koncu pošiljanja fotonov nimata enakega ključa. Komunikacijo lahko nadaljujeta po nevarovanem kanalu, pri čemer Alica Bobu pove, kateri polarizator je ustrezal posameznemu fotonu, ne izda pa točne polarizacije. Bob ji sporoči, pri katerih fotonih je uporabil pravilni polarizator. Fotone, pri katerih nista bila uskajela enostavno ignorirata in tako dobita končni ključ.
+
 Zakaj nam torej tak prenos podatkov omogoča zaznavo prisluškovalca?
-Če Eva želi dobiti sporočilo, ki ga Alica pošilja Bobu, mora prestreči poslane fotone, pri tem pa uporabiti enega od polarizatorjev. Eva ne ve katero polarizacijo je Alica izbrala za posamezen foton in lahko le naključno izbere polarizator, s katerim bo prebrala foton in ga nato poslala naprej Bobu. Ima torej 50\% možnosti, da se pri izbiri zmoti, s tem pokvari prvotno polarizacijo in zato Bobu posreduje napačno polariziran foton. Poslano sporočilo se seveda ne bo ujemalo s prejetim in Alica in Bob bosta vedela, da je bila prisotna tudi Eva. 
-
-Pojavi se vprašanje kako naj bi Bob vedel, kateri polarizator mora uporabiti. Alica mu zaradi morebitne prisotnosti Eve seveda ne sme povedati katero polarizacijo je uporabila na fotonih. Odgovor je preprost: tudi Bob ne ve, kateri polarizator mora uporabiti, zato ga kar naključno izbere. Skoraj zagotovo torej Alica in Bob po koncu pošiljanja fotonov tudi brez Eve nimata enakega ključa. Vendar obstaja način, da ga dobita. Pravimo mu BB84 protokol.
-
-
-%BB84 PROTOKOL
-
-\section{BB84 protokol}
-
-
-%ZGLED
-\section{Prikaz delovanja na zgledu}
+Če Eva želi dobiti sporočilo, ki ga Alica pošilja Bobu, mora prestreči poslane fotone, pri tem pa uporabiti enega od polarizatorjev. Eva ne ve katero polarizacijo je Alica izbrala za posamezen foton in lahko le naključno izbere polarizator, s katerim bo prebrala foton in ga nato poslala naprej Bobu. Ima torej 50\% možnosti, da se pri izbiri zmoti, s tem pokvari prvotno polarizacijo in zato Bobu posreduje napačno polariziran foton. Pri preverjanju uporabe polarizatorjev bosta Alice in Bob ugotovila, da prihaja do odstopanj v ključu pogosteje, kakor bi v primeru da Eva ne bi bila prisotna.
 
 
 %SUDOKU
