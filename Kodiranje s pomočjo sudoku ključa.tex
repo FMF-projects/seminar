@@ -37,9 +37,9 @@
 
 \section{Uvod}
 
-V današnjem svetu, kjer se vsak dan preko različnih komunikacijskih kanalov pretoči nepredstavljiva količina informacij, se pojavi vprašanje varovanja osebnih podatkov. Tema je še posebno aktualna na področju spletnih bančnih storitev in drugih zaupnih dejavnostih. Pomagamo si s šifriranjem podatkov, navadno s pomočjo neke metode ali ključa, ki ga poznata le pošiljatelj in prejemnik in ga uporabita za šifriranje sporočila. Pri šifriranju s ključem naletimo na problem, kako ključ za dešifriranje na varen način in v realnem času sporočiti našemu sogovorniku. Če namreč prisluškovalec prestreže naš ključ in za tem še sporočilo, bo brez težav dešifriral podatke. [2]
+V današnjem svetu, kjer se vsak dan preko različnih komunikacijskih kanalov pretoči nepredstavljiva količina informacij, se pojavi vprašanje varovanja osebnih podatkov. Tema je še posebno aktualna na področju spletnih bančnih storitev in drugih zaupnih dejavnostih. Pomagamo si s šifriranjem podatkov, navadno s pomočjo neke metode ali ključa, ki ga poznata le pošiljatelj in prejemnik. Pri šifriranju s ključem naletimo na problem, kako ključ za dešifriranje na varen način in v realnem času sporočiti našemu sogovorniku. Če namreč prisluškovalec prestreže naš ključ in za tem še sporočilo, bo brez težav dešifriral podatke.
 
-Kvantno šifriranje oziroma kvantna kriptografija temelji na posebnih fizikalnih lastnostih delcev. Te lastnosti omogočajo varen prenos šifrirnega ključa tudi preko javnega, nezaščitenega komunikacijskega kanala. S pomočjo te metode lahko celo ugotovimo, ali je bila med pošiljateljem in prejemnikom prisotna tretja oseba in po potrebi pripravimo nov ključ za šifriranje. [2]
+Kvantno šifriranje oziroma kvantna kriptografija temelji na posebnih fizikalnih lastnostih delcev. Te lastnosti omogočajo varen prenos šifrirnega ključa tudi preko javnega, nezaščitenega komunikacijskega kanala. S pomočjo te metode lahko celo ugotovimo, ali je bila med pošiljateljem in prejemnikom prisotna tretja oseba in po potrebi pripravimo nov ključ za šifriranje.
 
 
 %POLARIZACIJA FOTONOV
@@ -51,48 +51,50 @@ Kvantno šifriranje oziroma kvantna kriptografija temelji na posebnih fizikalnih
 Definirajmo najprej nekaj osnovnih pojmov s področja fizike delcev in fizike na splošno.
 
 \begin{definicija}
-Osnovni delec je delec, ki nima podstrukture, torej ni sestavljen iz manjših delcev. [7]
+Osnovni delec je delec, ki nima podstrukture, torej ni sestavljen iz manjših delcev.
 \end{definicija}
 
 \begin{definicija}
-Svetloba je elektromagnetno valovanje pri različnih valovnih dolžinah oziroma frekvencah. [8]
+Svetloba je elektromagnetno valovanje pri različnih valovnih dolžinah oziroma frekvencah.
 \end{definicija}
 
 \begin{definicija}
-Foton je brezmasni in električno nevtralen osnovni delec, ki potuje s svetlobno hitrostjo in je osnovni gradnik svetlobe. [6,9]
+Foton je brezmasni in električno nevtralen osnovni delec, ki potuje s svetlobno hitrostjo in je osnovni gradnik svetlobe.
 \end{definicija} 
 
-Torej si lahko širjenje svetlobe oziroma elektromagnetnega valovanja predstavljamo kot gibanje velikega števila fotonov v določeni smeri. Energija fotonov se spreminja obratno sorazmerno glede na valovno dolžino izsevane svetlobe. Tako krajša valovna dolžina pomeni več energije. [9]
+Torej si lahko širjenje svetlobe oziroma elektromagnetnega valovanja predstavljamo kot gibanje velikega števila fotonov v določeni smeri. Energija fotonov se spreminja obratno sorazmerno glede na valovno dolžino izsevane svetlobe. Tako krajša valovna dolžina pomeni več energije.
+
+\pagebreak
 
 \subsection{Polarizacija svetlobe}
 
 \begin{definicija}
-Polarizacija valovanja opisuje smer nihanja količine, ki valuje. [10,11]
+Polarizacija valovanja opisuje smer nihanja količine, ki valuje.
 \end{definicija}
 
 \begin{figure}[h]
 \centering
 \caption{Primer polarizacije}
-\includegraphics[scale=0.75]{images}
+\includegraphics[scale=0.75]{1}
 \end{figure}
 
-S polarizacijo opisujemo le transverzalno valovanje, saj pri longitudialnem smer nihanja količine sovpada s smerjo valovanja. Poznamo tri osnovne tipe polarizacije: linearno, krožno in eliptično. [10,11]
+S polarizacijo opisujemo le transverzalno valovanje, saj pri longitudinalnem smer nihanja količine sovpada s smerjo valovanja. Poznamo tri osnovne tipe polarizacije: linearno, krožno in eliptično.
 
 \begin{definicija}
-Val je linarno polariziran, če nihanje poteka le v eni smeri. Krožno in eliptično polarizacijo dobimo, kadar se s širjenjem vala nihanje suče. [10,11]
+Val je linearno polariziran, če nihanje poteka le v eni smeri. Krožno in eliptično polarizacijo dobimo, kadar se s širjenjem vala nihanje suče.
 \end{definicija}
 
 \begin{figure}[h]
 \centering
 \caption{Osnovni tipi polarizacije}
-\includegraphics[scale=2]{polcls}
+\includegraphics[scale=0.7]{3}
 \end{figure}
 
 \pagebreak
 
-Če se smer nihanja neurejeno obrača v vse smeri, govorimo o nedoločeni polarizaciji oziroma nepolariziranem valovanju. Takšno je naprimer svetloba, ki jo oddajajo navadna svetila, pa tudi Sonce. [9] \\
+Če se smer nihanja neurejeno obrača v vse smeri, govorimo o nedoločeni polarizaciji oziroma nepolariziranem valovanju. Takšno je naprimer svetloba, ki jo oddajajo navadna svetila, pa tudi Sonce. \\
 
-Elektromagnetno valovanje oziroma svetloba je transverzalno valovanje. Sestavljeno je iz nihanja električnega in magnetnega polja, ki nihata pravokotno na smer valovanja ter pravokotno en na drugega. Po dogovoru je smer polarizacije enaka smeri nihanja jakosti električnega polja. [10,11]
+Elektromagnetno valovanje oziroma svetloba je transverzalno valovanje. Sestavljeno je iz nihanja električnega in magnetnega polja, ki nihata pravokotno na smer valovanja ter pravokotno en na drugega. Po dogovoru je smer polarizacije enaka smeri nihanja jakosti električnega polja.
 
 \begin{figure}[h]
 \centering
@@ -103,13 +105,13 @@ Elektromagnetno valovanje oziroma svetloba je transverzalno valovanje. Sestavlje
 V nadaljevanju bomo potrebovali linearno polarizacijo fotonov, zato si poglejmo kako jo lahko umetno ustvarimo. Naj še enkrat opomnimo, da polarizacija fotonov sovpada s polarizacijo elektromagnetnega valovanja. 
 
 \begin{definicija}
-Polarizator je naprava, ki valovanje z nedoločeno ali mešano polarizacijo spremeni v valovanje z določeno polarizacijo. [12]
+Polarizator je naprava, ki valovanje z nedoločeno ali mešano polarizacijo spremeni v valovanje z določeno polarizacijo.
 \end{definicija}
 
 \begin{figure}[h]
 \centering
 \caption{Delovanje polarizatorja}
-\includegraphics[scale=0.6]{linear-figure-1}
+\includegraphics[scale=0.8]{2}
 \end{figure}
 
 \pagebreak
@@ -120,40 +122,40 @@ Polarizator je naprava, ki valovanje z nedoločeno ali mešano polarizacijo spre
 \section{Kvantna razdelitev ključa}
 
 \begin{definicija}
-Šifriranje podatkov je pretvorba podatkov v obliko, ki je nepooblaščene osebe ne razumejo. [15]
+Šifriranje podatkov je pretvorba podatkov v obliko, ki je nepooblaščene osebe ne razumejo.
 \end{definicija}
 
-Navadno šifriramo podatke z uporabo algoritmov ter drugih matematičnih postopkov. Čeprav je lahko tak postopek zelo učinkovit in ga morebitni vsiljivci težko dešifrirajo, pa je skoraj nemogoče preveriti prisotnost prisluškovalca. Prav to je izjemna lastnost kvantnega šifriranja podatkov. Sogovornika namreč ob koncu pogovora vesta, ali je njuno sporočila prejela še tretja oseba. [15]
+Navadno šifriramo podatke z uporabo algoritmov ter drugih matematičnih postopkov. Čeprav je lahko tak postopek zelo učinkovit in ga morebitni vsiljivci težko dešifrirajo, pa je skoraj nemogoče preveriti prisotnost prisluškovalca. Prav to je izjemna lastnost kvantnega šifriranja podatkov. Sogovornika namreč ob koncu pogovora vesta, ali je njuno sporočila prejela še tretja oseba.
 
 Kvantna razdelitev ključa lahko poteka na več različnih načinov, ogledali si bomo postopek, ki ustreza protokolu BB84.
 
 Za lažjo razlago postopka poimenujmo udeležence pri prenašanju sporočila.
 
 \begin{definicija}
-Alica je pošiljatelj sporočila,\\
-Bob sporočilo prejme,\\
+Alica je pošiljatelj sporočila.\\
+Bob sporočilo prejme.\\
 Eva pa ga skuša prestreči, torej je prisluškovalka.
 \end{definicija}
 
 Kako poteka kvantno šifriranje?\\
-Spoznali smo že fotone, njihovo polarizacijo in izvedeli kako lahko polarizacijo spreminjamo. Torej lahko z različnimi polarizacijami fotonov predstavimo različne vrednosti. [16]
+Spoznali smo že fotone, njihovo polarizacijo in izvedeli kako lahko polarizacijo spreminjamo. Torej lahko z različnimi polarizacijami fotonov predstavimo različne vrednosti.
 
 \begin{zgled}
-Naj naprimer linearna polarizacija v smeri y osi ($\uparrow$) v binarnem zapisu pomeni $1$, polarizacija v smeri x osi ($\rightarrow$) pa $0$. Na ta način lahko Alica z zaporedjem fotonov, ki jim priredi polarizacijo pošlje Bobu število v binarnem zapisu. Zaporedje fotonov s polarizacijo $\uparrow$ $\rightarrow$ $\uparrow$ $\uparrow$ $\rightarrow$ tako predstavlja število $1 0 1 1 0$.
+Naj linearna polarizacija v smeri y osi ($\uparrow$) v binarnem zapisu pomeni $1$, polarizacija v smeri x osi ($\rightarrow$) pa $0$. Na ta način lahko Alica z zaporedjem fotonov, ki jim priredi polarizacijo pošlje Bobu število v binarnem zapisu. Zaporedje fotonov s polarizacijo $\uparrow$ $\rightarrow$ $\uparrow$ $\uparrow$ $\rightarrow$ tako predstavlja število $1 0 1 1 0$.
 \end{zgled}
 
-Lahko bi definirali še število $2$ s polarizacijo v smeri premice pri kotu $45^{\circ}$ ($\nearrow$), ter število $3$ pri kotu $135^{\circ}$ ($\nwarrow$). Z različnimi smermi polarizacije lahko predstavimo še druge vrednosti in tako šifriramo sporočilo. Vendar je bolj enostavno, če se omejimo na manjše število polarizacij in uporabimo kvantno šifriranje izključno za pošiljanje ključa, s katerim nato šifriramo nadaljna sporočila. [16] \\
+Lahko bi definirali še število $2$ s polarizacijo v smeri premice pri kotu $45^{\circ}$ ($\nearrow$), ter število $3$ pri kotu $135^{\circ}$ ($\nwarrow$). Z različnimi smermi polarizacije lahko predstavimo še druge vrednosti in tako šifriramo sporočilo. Vendar je bolj enostavno, če se omejimo na manjše število polarizacij in uporabimo kvantno šifriranje izključno za pošiljanje ključa, s katerim nato šifriramo nadaljnja sporočila. \\
 
-Bob mora pri prejemu posameznega fotona uporabiti ustrezen polarizator, sicer odčitana vrednost ni pravilna. Če je Alica foton polarizirala z $\uparrow$ ali $\rightarrow$ mora za pravilno interpretacijo Bob uporabiti polarizator oblike $+$, za $\nearrow$ in $\nwarrow$ polarizaciji pa polarizator $\times$. Taki obliki polarizatorja namreč omogočata nemoteno prehajanje fotonov z ustreznimi polarizacijami. Polarizatorjem določene oblike pravimo tudi baza polarizacije, npr. polarizator $+$ je baza polarizacije za polarizaciji $\uparrow$ in $\rightarrow$. Kaj bi se zgodilo, če bi Bob pri prejemu fotona uporabil napačen polarizator? [1,16]
+Bob mora pri prejemu posameznega fotona uporabiti ustrezen polarizator, sicer odčitana vrednost ni pravilna. Če je Alica foton polarizirala z $\uparrow$ ali $\rightarrow$, mora za pravilno interpretacijo Bob uporabiti polarizator oblike $+$, za $\nearrow$ in $\nwarrow$ polarizaciji pa polarizator $\times$. Taki obliki polarizatorja namreč omogočata nemoteno prehajanje fotonov z ustreznimi polarizacijami. Polarizatorjem določene oblike pravimo tudi baza polarizacije. Polarizator $+$ je torej baza polarizacije za polarizaciji $\uparrow$ in $\rightarrow$. Kaj bi se zgodilo, če bi Bob pri prejemu fotona uporabil napačen polarizator?
 
 \begin{zgled}
-Recimo da Alica želi poslati vrednost $1$, torej pošlje foton s polarizacijo $\uparrow$. Če Bob namesto polarizatorja $+$, ki bi pravilno odčital polarizacijo fotona uporabi polarizator $\times$, bo naključno prejel eno od $\nearrow$, $\nwarrow$ polarizacij. Torej bo namesto vrednosti $1$, prejel število $2$ ali $3$ oziroma ustrezno definirano vrednost pri posamezni polarizaciji. [16]
+Recimo da Alica želi poslati vrednost $1$, torej pošlje foton s polarizacijo $\uparrow$. Če Bob namesto polarizatorja $+$, ki bi pravilno odčital polarizacijo fotona uporabi polarizator $\times$, bo naključno prejel eno od $\nearrow$, $\nwarrow$ polarizacij. Torej bo namesto vrednosti $1$, prejel število $2$ ali $3$ oziroma ustrezno definirano vrednost pri posamezni polarizaciji.
 \end{zgled}
 
-Pojavi se vprašanje kako naj bi Bob vedel, kateri polarizator mora uporabiti. Alica mu zaradi morebitne prisotnosti Eve seveda ne sme povedati katero polarizacijo je uporabila na fotonih. Odgovor je preprost: tudi Bob ne ve kateri polarizator mora uporabiti, zato ga kar naključno izbere. Skoraj zagotovo torej Alica in Bob po koncu pošiljanja fotonov nimata enakega ključa. Komunikacijo lahko nadaljujeta po nevarovanem kanalu, pri čemer Alica Bobu pove, kateri polarizator je ustrezal posameznemu fotonu, ne izda pa točne polarizacije. Bob ji sporoči, pri katerih fotonih je uporabil pravilni polarizator. Fotone, pri katerih nista bila usklajena enostavno ignorirata in tako dobita končni ključ. [1,16] \\
+Pojavi se vprašanje, kako naj bi Bob vedel kateri polarizator mora uporabiti. Alica mu zaradi morebitne prisotnosti Eve seveda ne sme povedati katero polarizacijo je uporabila na fotonih. Odgovor je preprost: tudi Bob ne ve kateri polarizator mora uporabiti, zato ga kar naključno izbere. Skoraj zagotovo torej Alica in Bob po koncu pošiljanja fotonov nimata enakega ključa. Komunikacijo lahko nadaljujeta po nevarovanem kanalu, pri čemer Alica Bobu pove, kateri polarizator je ustrezal posameznemu fotonu, ne izda pa točne polarizacije. Bob ji sporoči, pri katerih fotonih je uporabil pravilni polarizator. Fotone, pri katerih nista bila usklajena enostavno ignorirata in tako dobita končni ključ. \\
 
 \begin{zgled}
-Naj bo $\uparrow$ oznaka za $1$ in $\rightarrow$ za $0$ v polarizacijski bazi +, ter $\nwarrow$ oznaka za $1$ in $\nearrow$ za $0$ v bazi $\times$. [16]
+Naj bo $\uparrow$ oznaka za $1$ in $\rightarrow$ za $0$ v polarizacijski bazi +, ter $\nwarrow$ oznaka za $1$ in $\nearrow$ za $0$ v bazi $\times$.
 
 
 \begin{center}
@@ -173,26 +175,26 @@ končni ključ & 1 & - & - & 1 & 0 & 0 & - & 1 & 0 & 0 & - & 1\\
 \end{zgled}
 
 Zakaj nam torej tak prenos podatkov omogoča zaznavo prisluškovalca?
-Če Eva želi dobiti sporočilo, ki ga Alica pošilja Bobu, mora prestreči poslane fotone, pri tem pa za odčitavanje polarizacij uporabiti enega od polarizatorjev. Eva ne ve katero polarizacijo je Alica izbrala za posamezen foton in lahko le naključno izbere polarizator, s katerim bo prebrala foton in ga nato poslala naprej Bobu. Ima torej $50\%$ možnosti, da se pri izbiri zmoti, s tem pokvari prvotno polarizacijo in zato Bobu posreduje napačno polariziran foton. Bob prejme foton in tako kot Eva naključno izbere polarizator. Sledijo štirje možni scenariji.
+Če Eva želi dobiti sporočilo, ki ga Alica pošilja Bobu, mora prestreči poslane fotone. Pri tem mora za odčitavanje polarizacij uporabiti enega od polarizatorjev. Eva ne ve katero polarizacijo je Alica izbrala za posamezen foton in lahko le naključno izbere polarizator, s katerim bo prebrala foton in ga nato poslala Bobu. Ima torej $50\%$ možnosti, da se pri izbiri zmoti, s tem pokvari prvotno polarizacijo in zato Bobu posreduje napačno polariziran foton. Bob prejme foton in tako kot Eva naključno izbere polarizator. Sledijo štirje možni scenariji.
 
 \begin{itemize}
 
-\item Tako Eva kot Bob sta pravilno izbrala polarizatorja, zato se polarizacija ohrani in oba odčitata pravilno vrednost fotona. (prvi foton v spodnjem zgledu)
+\item Tako Eva kot Bob sta pravilno izbrala polarizatorja, zato se polarizacija ohrani in oba odčitata pravilno vrednost fotona (prvi foton v spodnjem zgledu).
 
-\item Eva je izbrala napačen polarizator in tako pokvarila prvotno polarizacijo. Bob je izbral enak polarizator kot Eva, torej je odčital njeno naključno spremenjeno polarizacijo, ki se razlikuje od Alicine. Ker imata Alica in Bob v tem primeru različni bazi polarizacije bosta ta foton zanemarila. (drugi foton v spodnjem zgledu)
+\item Eva je izbrala napačen polarizator in pokvarila prvotno polarizacijo. Bob je izbral enak polarizator kot Eva, torej je odčital njeno naključno spremenjeno polarizacijo, ki se razlikuje od Alicine. Ker imata Alica in Bob v tem primeru različni bazi polarizacije bosta ta foton zanemarila (drugi foton v spodnjem zgledu).
 
-\item Eva je izbrala napačen polarizator. Bob je izbral enak polarizator kot Alica, vendar je od Eve prejel spremenjeno polarizacijo, ki ne ustreza njegovi izbiri polarizatorja. Odčital bo naključno polarizacijo iz baze, ki jo je izbral. V polovici primerov te vrste bo prišlo do razlikovanja v vrednosti kljub temu, da sta Alica in Bob uporabila enaki bazi polarizacije. (tretji foton v spodnjem zgledu)
+\item Eva je izbrala napačen polarizator. Bob je izbral enak polarizator kot Alica, vendar je od Eve prejel spremenjeno polarizacijo, ki ne ustreza njegovi izbiri polarizatorja. Odčital bo naključno polarizacijo iz baze, ki jo je izbral. V polovici primerov te vrste bo prišlo do razlikovanja v vrednosti kljub temu, da sta Alica in Bob uporabila enaki bazi polarizacije (tretji foton v spodnjem zgledu).
 
-\item Zadnja možnost je enaka prejšnji, le da Bob na koncu po naklučju odčita pravilno polarizacijo, torej tisto, ki jo je poslala Alica in to kljub posredovanju Eve. (šesti foton v spodnjem zgledu)
+\item Zadnja možnost je enaka prejšnji, le da Bob na koncu po naključju odčita pravilno polarizacijo. Alica in Bob imata torej enako vrednost kljub posredovanju Eve (šesti foton v spodnjem zgledu).
 
 \end{itemize}
 
-V tretjem primeru, bosta torej Alica in Bob pri pregledovanju polarizatorjev pod vtisom, da se njuni vrednosti ujemata, vendar zaradi Eve temu ni tako. V resnici nimata enakega ključa za šifriranje, zato Bob prejetega sporočila ne bo mogel dešifrirati s svojim ključem. Tako bosta vedela, da je bila med pošiljanjem ključa prisotna Eva.  [1,16]
+V tretjem primeru bosta torej Alica in Bob pri pregledovanju polarizatorjev pod vtisom, da se njuni vrednosti ujemata, vendar zaradi Eve temu ni tako. V resnici nimata enakega ključa za šifriranje, zato Bob prejetega sporočila ne bo mogel dešifrirati s svojim ključem. Tako bosta vedela, da je bila med pošiljanjem ključa prisotna Eva.
 
 \pagebreak
 
 \begin{zgled} 
-Primer z Evino prisotnostjo. [1]
+Primer z Evino prisotnostjo.
 
 \begin{center}
 \begin{tabular}{ l m{0.3 cm} m{0.3 cm} m{0.3 cm} m{0.3 cm} m{0.3 cm} m{0.3 cm} m{0.3 cm} m{0.3 cm}}
@@ -220,7 +222,7 @@ ujemanje ključev & \cmark & - & \xmark & - & - & \cmark & - & \cmark\\
 \section{Sudoku}
 
 \begin{definicija}
-Sudoku je logična uganka, pri kateri je cilj zapolniti mrežo velikosti 9x9 s števili od 1 do 9 tako, da se vsako število v vsakem stolpcu, vrstici in 3x3 kvadratu znotraj mreže pojavi natanko enkrat. [3]
+Sudoku je logična uganka, pri kateri je cilj zapolniti mrežo velikosti 9$\times$9 s števili od 1 do 9 tako, da se vsako število v vsakem stolpcu, vrstici in 3$\times$3 kvadratu znotraj mreže pojavi natanko enkrat.
 \end{definicija}
 
 \begin{figure}[h]
@@ -231,13 +233,13 @@ Sudoku je logična uganka, pri kateri je cilj zapolniti mrežo velikosti 9x9 s �
 
 \pagebreak
 
-Sudokuja se je domislil američan Howard Garns in ga prvič objavil leta $1979$. Pravijo, da je idejo dobil na podlagi Eulerjevega latinskega kvadrata. To je matrika velikosti $nxn$, napolnjena z n različnimi znaki, pri čemer se vsak znak v vrstici in stolpcu pojavi natanko enkrat. [3,4]
+Sudokuja se je domislil Američan Howard Garns in ga prvič objavil leta $1979$. Pravijo, da je idejo dobil na podlagi Eulerjevega latinskega kvadrata. To je matrika velikosti n$\times$n, napolnjena z n različnimi znaki, pri čemer se vsak znak v vrstici in stolpcu pojavi natanko enkrat.
 
-Čez $5$ let so uganko objavili tudi na Japonskem in jo poimenovali ''Suuji wa dokushin ni kagiru'', kar v prevodu pomeni ''števke morajo biti edine'', prvi zlogi besed pa nam podajo ravno znano ime uganke: SUDOKU. [3,4]
+Čez $5$ let so uganko objavili tudi na Japonskem in jo poimenovali ''Suuji wa dokushin ni kagiru'', kar v prevodu pomeni ''števke morajo biti edine''. Prvi zlogi besed nam podajo ravno znano ime uganke: SUDOKU.
 
-Število vseh možnih sudoku mrež, pri velikosti $9x9$ je približno $6,6$ trilijonov natančneje $6.670.903.752.021.072.936.960$. Zahtevnost uganke je obratno sorazmerna s številom že vpisanih števil. Lažji sudokuji imajo tako podanih več kot $30$ števil, težji pa nekje med $20$ in $30$. Dolgo je bil odprt problem najmanjšega števila začetnih števil, ki še vedno podajo enolično rešitev. Leta $2012$ so dokazali, da je to število $17$, saj je bilo iskanje enolične rešitve s pomočjo računalnika za sistem s $16$ podanimi števili neuspešno. [3,4]
+Število vseh možnih sudoku mrež pri velikosti 9$\times$9, je približno $6,6$ trilijonov natančneje $6.670.903.752.021.072.936.960$. Zahtevnost uganke je obratno sorazmerna s številom že vpisanih števil. Lažji sudokuji imajo tako podanih več kot $30$ števil, težji pa nekje med $20$ in $30$. Dolgo je bil odprt problem najmanjšega števila začetnih števil, ki še vedno podajo enolično rešitev. Leta $2012$ so dokazali, da je to število $17$, saj je bilo iskanje enolične rešitve s pomočjo računalnika za sistem s $16$ podanimi števili neuspešno.
 
-Skozi leta so se razvile različne oblike sudokuja in prispevale k težavnosti reševanja. Poznamo naprimer Sudoku X, pri katerem mora poleg standardnih pogojev veljati še, da se števila tudi na diagonalah pojavijo le enkrat. Še bolj ekstremna oblika pa je geometrijski sudoku, pri katerem znotraj mreže nimamo $3x3$ kvadratov, temveč različne geometrijske like sestavljene iz devetih polj. [3,4]
+Skozi leta so se razvile različne oblike sudokuja in prispevale k težavnosti reševanja. Poznamo naprimer Sudoku X, pri katerem mora poleg standardnih pogojev veljati še, da se števila tudi na diagonalah pojavijo le enkrat. Še bolj ekstremna oblika pa je geometrijski sudoku, pri katerem znotraj mreže nimamo 3$\times$3 kvadratov, temveč različne geometrijske like sestavljene iz devetih polj.
 
 \begin{figure}[h]
 \centering
@@ -249,9 +251,9 @@ Skozi leta so se razvile različne oblike sudokuja in prispevale k težavnosti r
 
 \section{Sudoku ključ}
 
-Na primeru si oglejmo kako poteka kvantno razdeljevanje ključa s pomočjo sudoku mreže. [1]
+Na primeru si oglejmo kako poteka kvantno razdeljevanje ključa s pomočjo sudoku mreže.
 
-Alica se odloči, da bo ključ za šifriranje poslala Bobu s pomočjo fotonov tako, da bo zaporedje polarizacij predstavljalo rešitev $4x4$ sudoku mreže. Poslala bo sledeč sudoku:
+Alica se odloči, da bo ključ za šifriranje poslala Bobu s pomočjo fotonov tako, da bo zaporedje polarizacij predstavljalo rešitev 4$\times$4 sudoku mreže. Poslala bo sledeč sudoku:
 
 \begin{center}
 \begin{tabular}{| c | c || c | c |}
@@ -268,7 +270,7 @@ Alica se odloči, da bo ključ za šifriranje poslala Bobu s pomočjo fotonov ta
 \end{tabular}
 \end{center}
 
-Pri tem pa uporabila polarizacije:
+Pri tem bo uporabila polarizacije:
 
 \begin{center}
 \begin{tabular}{l c c c c}
@@ -284,11 +286,11 @@ baza polarizacije & + & + & $\times$ & $\times$\\
 \begin{tabular}{l m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm}}
 vrednost & 0 & 1 & 2 & 3 & 3 & 2 & 1 & 0 & 2 & 0 & 3 & 1 & 1 & 3 & 0 & 2\\
 baza & + & + & $\times$ & $\times$ & $\times$ & $\times$ & + & + & $\times$ & + & $\times$ & + & + & $\times$ & + & $\times$\\
-polarizacija & $\rightarrow$ & $\uparrow$ & $\nwarrow$ & $\nearrow$ & $\nearrow$ & $\nwarrow$ & $\uparrow$ & $\rightarrow$ & $\nwarrow$ & $\rightarrow$ & $\nearrow$ & $\uparrow$ & $\uparrow$ & $\nearrow$ & $\rightarrow$ & $\nwarrow$.
+polarizacija & $\rightarrow$ & $\uparrow$ & $\nwarrow$ & $\nearrow$ & $\nearrow$ & $\nwarrow$ & $\uparrow$ & $\rightarrow$ & $\nwarrow$ & $\rightarrow$ & $\nearrow$ & $\uparrow$ & $\uparrow$ & $\nearrow$ & $\rightarrow$ & $\nwarrow$
 \end{tabular}
 \end{center}
 
-Po prej opisanem postopku, Alica Bobu pošlje fotone, on pa jih prestreže in na vsakem uporabi naključno izbrano bazo polarizacije, torej $+$ ali $\times$. 
+Po prej opisanem postopku Alica Bobu pošlje fotone, on pa jih prestreže in na vsakem uporabi naključno izbrano bazo polarizacije, torej $+$ ali $\times$. 
 
 \begin{center}
 \begin{tabular}{l m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm} m{0.2 cm}}
@@ -301,7 +303,7 @@ prejeta vrednost & 0 & - & - & - & 3 & 2 & 1 & - & - & - & 3 & 1 & - & 3 & - & 2
 \end{tabular}
 \end{center}
 
-Bob lahko vrednosti, pri katerih sta se njegova in Alicina baza polarizacije ujemali vnese v $4x4$ mrežo in na ta način dobi nerešen sudoku.
+Bob lahko vrednosti, pri katerih sta se njegova in Alicina baza polarizacije ujemali vnese v 4$\times$4 mrežo in na ta način dobi nerešen sudoku.
 
 \begin{center}
 \begin{tabular}{| c | c || c | c |}
@@ -318,18 +320,18 @@ Bob lahko vrednosti, pri katerih sta se njegova in Alicina baza polarizacije uje
 \end{tabular}
 \end{center}
 
-Sudoku reši po pravilih reševanja in dobi celoten ključ za šifriranje. Minimalno število podanih števil za enolično rešitev sudokuja velikosti $4x4$ je $4$, kar pomeni, da mora Bob pravilno odčitati polarizacije vsaj štirih fotonov. V nasprotnem primeru morata postopek ponoviti, seveda z novim ključem. [17]
+Sudoku reši po pravilih reševanja in dobi celoten ključ za šifriranje. Minimalno število podanih števil za enolično rešitev sudokuja velikosti 4$\times$4 je $4$, kar pomeni, da mora Bob pravilno odčitati polarizacije vsaj štirih fotonov. V nasprotnem primeru je potrebno postopek ponoviti, seveda z novim ključem.
 
-Če je bila pri prenašanju ključa prisotna tudi Eva, bo pokvarila postavitev števil, ki omogoča pravilno rešitev sudokuja in tako razkrila svojo prisotnost. Bob namreč ne bo mogel rešiti sudoku mreže na način, ki bi ustezal pravilom. [16]
+Če je bila pri prenašanju ključa prisotna tudi Eva, bo pokvarila postavitev števil, ki omogoča pravilno rešitev sudokuja in tako razkrila svojo prisotnost. Bob namreč ne bo mogel rešiti sudoku mreže na način, ki bi ustrezal pravilom.
 
 
 % ZAKLJUČEK
 
 \section{Zaključek}
 
-Prednost pošiljanja ključa za šifriranje s pomočjo sudokuja je v tem, da Bobu ni potrebno povedati, pri katerih fotonih je izbral pravilni polarizator. Slaba lastnost se skriva v tem, da tudi Eva pozna enostaven postopek, s katerim dobi celoten ključ, če je pravilno odčitala zadostno število polarizacij. V našem zgledu potrebuje le $4$ števila.
+Prednost pošiljanja ključa za šifriranje s pomočjo sudokuja je v tem, da Bobu ni potrebno povedati pri katerih fotonih je izbral pravilni polarizator. Slaba lastnost se skriva v tem, da tudi Eva pozna postopek, s katerim dobi celoten ključ. Pravilno mora odčitati le zadostno število polarizacij, torej v našem zgledu $4$.
 
-Seveda pa ne smemo pozabiti, da bo Eva s svojim posredovanjem v večini primerov pokvarila pravilno postavitev sudokuja. Bob bo zaznal njeno prisotnost v trenutku, ko bo ugotovil, da ne more rešiti sudokuja in opozoril Alico, še preden mu pošlje šifrirano sporočilo. Tako Eva sicer lahko dobi pravilen ključ, vendar ne bo dobila sporočila, saj bosta Alica in Bob komunikacijo prekinila in ponovila postopek z novim ključem. 
+Seveda pa ne smemo pozabiti, da bo Eva s svojim posredovanjem v večini primerov pokvarila pravilno postavitev sudokuja. Bob bo zaznal njeno prisotnost v trenutku, ko bo ugotovil, da ne more rešiti sudokuja. Lahko bo opozoril Alico še preden mu pošlje šifrirano sporočilo. Tako Eva sicer lahko dobi pravilen ključ, vendar ne bo dobila sporočila, saj bosta Alica in Bob komunikacijo prekinila in ponovila postopek z novim ključem. 
 
 \pagebreak
 
